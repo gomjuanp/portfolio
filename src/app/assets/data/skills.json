@@ -1,0 +1,91 @@
+{
+    "strong": [
+
+        {   
+            "id": 1,
+            "name": "HTML5",
+            "img": "/img/html.png"
+        },
+        {   
+            "id": 2,
+            "name": "CSS",
+            "img": "/img/css.png"
+        },
+        {   
+            "id": 3,
+            "name": "TypeScript",
+            "img": "/img/ts.png"
+        },
+        {   
+            "id": 4,
+            "name": "Angular",
+            "img": "/img/angular.png"
+        },
+        {   
+            "id": 5,
+            "name": "Java",
+            "img": "/img/java.png"
+        },
+        {   
+            "id": 6,
+            "name": "MySQL",
+            "img": "/img/MySQL.png"
+        },
+        { 
+            "id": 7,  
+            "name": "AWS",
+            "img": "/img/aws.png"
+        },
+        {   
+            "id": 8,  
+            "name": "Oracle",
+            "img": "/img/oracle.png"
+        }
+
+    ],
+
+    "learning": [
+        {   
+            "id": 1,
+            "name": "JavaScript",
+            "img": "/img/js.png"
+        },
+        {  
+            "id": 2, 
+            "name": "Python",
+            "img": "/img/python.png"
+        },
+        {   
+            "id": 3,
+            "name": "MongoDB",
+            "img": "/img/mongodb.png"
+        },
+        {   
+            "id": 4,
+            "name": "Linux",
+            "img": "/img/linux.png"
+        },
+        {
+            "id": 5,
+            "name": "Kaspersky",
+            "img": "/img/kaspersky.png"
+        },
+        {
+            "id": 6,
+            "name": "C",
+            "img": "/img/c.png"
+        },
+        {
+            "id": 7,
+            "name": "C#/WPF",
+            "img": "/img/c_sharp.png"
+        },
+        {
+            "id": 8,
+            "name": "Ionic",
+            "img": "/img/ionic.png"
+        }
+
+    ]
+
+}

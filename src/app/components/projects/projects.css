@@ -1,0 +1,141 @@
+.projects-section{
+    background-color: rgb(232, 244, 255);
+    padding: 32px 25px;
+    border-radius: 12px;
+    margin: 0 16px;
+}
+
+.projects-section > mat-card-title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(232, 244, 255);
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.finished-projects, .working-projects{
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+.finished-projects > mat-card-header, .working-projects > mat-card-header{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 22px;
+    padding-top: 30px;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+.finished-projects > mat-card-content, .working-projects > mat-card-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.425);
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 10px;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 550px;
+    max-width: 550px;
+    height: 550px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.425);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    flex: 1 1 120px;
+}
+
+img[mat-card-img]{
+    width: 100%;
+    height: auto;
+}
+
+.project-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-description{
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.project-card > mat-card-content{
+    margin-bottom: 20px;
+}
+
+.project-card > mat-card-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    width: 92%;
+    padding: 0 15px 20px 15px;
+}
+
+.project-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 16px;
+    background-color: rgba(232, 244, 255, 0.808);
+    border-radius: 12px;
+    gap: 10px;
+    width: 100%;
+}
+
+.technology-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.project-links{
+    max-width: 45px;
+    max-height: 455px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .project-card {
+            min-width: 100%;
+            max-width: 100%;
+            height: auto;        
+        }
+
+    .project-card > mat-card-footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        width: 90%;
+        padding: 0 15px 20px 15px;
+    }
+
+    .project-footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;   
+        padding: 8px;
+        justify-content: center;
+    }
+
+    .technology-icon {
+        width: 20px;
+        height: 20px;        
+
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "finishedProjects":[
+        {   
+            "id":1,
+            "type": "Web App",
+            "name":"ToDo App",
+            "img":"/img/toDoApp.png",
+            "description":"This is a school project that allows users to add tasks with a name, start date, deadline, and description, view all tasks, and delete them. This is the app's first release and covers basic task management features.",
+            "technologies":[
+                {
+                    "id":1,
+                    "name":"Angular",
+                    "img": "/img/angular.png"
+                },
+                {
+                    "id":2,
+                    "name":"HTML",
+                    "img": "/img/html.png"
+                },
+                {
+                    "id":3,
+                    "name":"CSS",
+                    "img": "/img/css.png"
+                },
+                {
+                    "id":4,
+                    "name":"TypeScript",
+                    "img": "/img/ts.png"
+                }
+            ],
+            "links": [
+                {
+                    "name": "GitHub",
+                    "url": ""
+                },
+                {
+                    "name": "Live Demo",
+                    "url": ""
+                }
+            ]
+        }
+        
+    ],
+    "workingProjects":[
+        {
+            "id":1,
+            "type": "",
+            "name":"WireShark With AI",
+            "img":"",
+            "description":"",
+            "technologies":[
+            {
+                "id":1,
+                "name":"Python",
+                "img": "/img/python.png"
+            }
+            ],
+            "links": [
+                {
+                    "name": "GitHub",
+                    "url": ""
+                },
+                {
+                    "name": "Live Demo",
+                    "url": ""
+                }
+            ]
+        }
+
+    ]
+}

@@ -1,0 +1,71 @@
+<hr>
+<!-- Contact Information Title -->
+<h2>Contact</h2>
+
+<!-- Contact Information Content -->
+<section class="information">
+
+    <!-- Personal Information -->
+    <div class="personal-info">
+
+        <p>Juan Pablo Ordonez Gomez</p>
+        <p>
+            
+            <span class="email" (click)="copyEmail()" title="Copy">
+                
+                gomjuan&#64;sheridancollege.ca
+
+            </span>
+            
+            <span *ngIf="copied" class="copied-message">
+
+                Copied!
+
+            </span>
+
+        </p>
+        <p>Mississauga, Ontario, Canada</p>
+        <a href="#header">Back to the Top</a>
+
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="links">
+
+        <a href="https://github.com/gomjuanp">
+
+            <mat-card>
+
+                <img mat-card-img src="/img/github.png" alt="github" title="gomjuanp">
+
+            </mat-card>
+
+        </a>
+
+        <a href="https://www.linkedin.com/in/gomjuanp/">
+
+            <mat-card>
+
+                <img mat-card-img src="/img/linkedin.png" alt="linkedin" title="gomjuanp">
+
+            </mat-card>
+
+        </a>
+
+    </div>
+
+    <!-- Courses Information -->
+    <div class="courses">
+
+        <p>More info about my Sheridan courses. </p>
+        <a href="https://www.sheridancollege.ca/programs/computer-systems-technology-software-development-and-network-engineering#tab=courses">
+            <mat-card class="sheridan-banner">
+
+                <img mat-card-image src="/img/sheridan.png" alt="SDNE Courses" title="SDNE Courses">
+
+            </mat-card>
+        </a>
+
+    </div>
+    
+</section>

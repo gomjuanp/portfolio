@@ -1,0 +1,67 @@
+<!-- Skills Section -->
+<mat-card class="skills-card">
+
+    <!-- Skills Section Title -->
+    <mat-card-title>Skills</mat-card-title>
+
+    <!-- Skills Section Content -->
+    <mat-card-content>
+
+        <!-- Strong Skills -->
+        <mat-card class="strong-skills">
+
+            <!-- Strong Skills Header -->
+            <mat-card-header>Strong</mat-card-header>
+
+            <!-- Strong Skills Content -->
+            <mat-card-content>
+
+                <!-- Strong Skills List -->
+                <mat-card *ngFor="let strongSkill of strongSkills;" class="skill-card">
+
+                    <!-- Strong Skills List Content -->
+                    <mat-card-content class="{{strongSkill.name}}">
+
+                        <img mat-card-image src="{{strongSkill.img}}">
+                        <p>{{strongSkill.name}}</p>
+
+                    </mat-card-content>
+
+                </mat-card>
+                
+            
+            </mat-card-content>
+
+        </mat-card>
+        
+        <br><br>
+
+        <!-- Learning Skills -->
+        <mat-card class="learning-skills">
+
+            <!-- Learning Skills Header -->
+            <mat-card-header>Learning</mat-card-header>
+
+            <!-- Learning Skills Content -->
+            <mat-card-content>
+
+                <!-- Learning Skills List -->
+                <mat-card *ngFor="let learningSkill of learningSkills;" class="skill-card">
+
+                    <!-- Learning Skills List Content -->
+                    <mat-card-content class="{{learningSkill.name}}">
+
+                        <img mat-card-image src="{{learningSkill.img}}">
+                        <p>{{learningSkill.name}}</p>
+
+                    </mat-card-content>
+
+                </mat-card>
+            
+            </mat-card-content>
+
+        </mat-card>  
+
+    </mat-card-content>                
+
+</mat-card>
