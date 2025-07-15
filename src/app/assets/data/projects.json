@@ -27,15 +27,16 @@
                     "name":"TypeScript",
                     "img": "/img/ts.png"
                 }
+                
             ],
             "links": [
                 {
                     "name": "GitHub",
-                    "url": ""
+                    "url": "https://github.com/gomjuanp/toDoApp"
                 },
                 {
                     "name": "Live Demo",
-                    "url": ""
+                    "url": "https://to-do-app-ruby-delta-52.vercel.app/"
                 }
             ]
         }
@@ -44,10 +45,10 @@
     "workingProjects":[
         {
             "id":1,
-            "type": "",
+            "type": "DeskTop App",
             "name":"WireShark With AI",
-            "img":"",
-            "description":"",
+            "img":"/img/networkTraficAI.png",
+            "description":"A network traffic project that captures the traffic using Wireshark and applies AI to detect potential attacks. It is still in development as I learn how to collect all the possibles real-world scenarios to train the model.",
             "technologies":[
             {
                 "id":1,
@@ -58,11 +59,11 @@
             "links": [
                 {
                     "name": "GitHub",
-                    "url": ""
+                    "url": "https://github.com/gomjuanp/networkTrafficAI"
                 },
                 {
                     "name": "Live Demo",
-                    "url": ""
+                    "url": "/#"
                 }
             ]
         }
