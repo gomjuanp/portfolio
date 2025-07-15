@@ -19,10 +19,8 @@
                 <!-- Finished Projects Cards -->
                 <mat-card *ngFor="let finishedProject of FinishedProjects;" class="project-card">
 
-                    <a href="{{finishedProject.links[1].url}}" class="project-link">
-
                             <!-- Finished Project Image and Name -->
-                        <mat-card-content>
+                        <mat-card-content (click)="redirectToWebSite(true, finishedProject.id)">
                             
                             <img mat-card-img src="{{finishedProject.img}}" class="project-image">
                             <p class="project-name">{{finishedProject.name}}</p>
@@ -44,11 +42,8 @@
                             <a href="{{finishedProject.links[0].url}}"><img src="/img/github.png" class="project-links"></a>
 
                         </mat-card-footer>
-
-                    </a>
             
                 </mat-card>
-                
             
             </mat-card-content>
 
@@ -68,10 +63,7 @@
                 <!-- Working Projects Cards -->
                 <mat-card *ngFor="let workingProject of WorkingProjects;" class="project-card">
 
-                    <!-- Working Project Image and Name -->
-                     <a href="{{workingProject.links[1].url}}" class="project-link">
-
-                        <mat-card-content>
+                        <mat-card-content (click)="redirectToWebSite(false, workingProject.id)">
 
                             <img mat-card-img src="{{workingProject.img}}" class="project-image">
                             <p class="project-name">{{workingProject.name}}</p>
@@ -94,8 +86,6 @@
                             <a href="{{workingProject.links[0].url}}"><img src="/img/github.png" class="project-links"></a>
 
                         </mat-card-footer>
-                        
-                     </a>
                     
                 </mat-card>
             
