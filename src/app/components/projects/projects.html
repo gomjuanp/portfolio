@@ -19,29 +19,33 @@
                 <!-- Finished Projects Cards -->
                 <mat-card *ngFor="let finishedProject of FinishedProjects;" class="project-card">
 
-                    <!-- Finished Project Image and Name -->
-                    <mat-card-content>
-                        
-                        <img mat-card-img src="{{finishedProject.img}}" class="project-image">
-                        <p class="project-name">{{finishedProject.name}}</p>
-                        <span *ngIf="isSmallScreen == false">
+                    <a href="{{finishedProject.links[1].url}}" class="project-link">
 
-                            <p class="project-description">{{finishedProject.description}}</p>
+                            <!-- Finished Project Image and Name -->
+                        <mat-card-content>
+                            
+                            <img mat-card-img src="{{finishedProject.img}}" class="project-image">
+                            <p class="project-name">{{finishedProject.name}}</p>
+                            <span *ngIf="isSmallScreen == false">
 
-                        </span>
+                                <p class="project-description">{{finishedProject.description}}</p>
 
-                    </mat-card-content>
-                    <!-- Finished Project Description and technologies -->
-                    <mat-card-footer>
+                            </span>
 
-                        <span class="project-footer">
+                        </mat-card-content>
+                        <!-- Finished Project Description and technologies -->
+                        <mat-card-footer>
 
-                            <img *ngFor="let technology of finishedProject.technologies" src="{{technology.img}}" class="technology-icon">
+                            <span class="project-footer">
 
-                        </span>
-                        <a href="{{finishedProject.links[0].url}}"><img src="/img/github.png" class="project-links"></a>
+                                <img *ngFor="let technology of finishedProject.technologies" src="{{technology.img}}" class="technology-icon">
 
-                    </mat-card-footer>
+                            </span>
+                            <a href="{{finishedProject.links[0].url}}"><img src="/img/github.png" class="project-links"></a>
+
+                        </mat-card-footer>
+
+                    </a>
             
                 </mat-card>
                 
@@ -65,33 +69,34 @@
                 <mat-card *ngFor="let workingProject of WorkingProjects;" class="project-card">
 
                     <!-- Working Project Image and Name -->
-                    <mat-card-content>
+                     <a href="{{workingProject.links[1].url}}" class="project-link">
 
-  
+                        <mat-card-content>
 
-                        <img mat-card-img src="{{workingProject.img}}" class="project-image">
-                        <p class="project-name">{{workingProject.name}}</p>
-                        <span *ngIf="isSmallScreen == false">
+                            <img mat-card-img src="{{workingProject.img}}" class="project-image">
+                            <p class="project-name">{{workingProject.name}}</p>
+                            <span *ngIf="isSmallScreen == false">
 
-                                <p class="project-description">{{workingProject.description}}</p>
+                                    <p class="project-description">{{workingProject.description}}</p>
 
-                        </span>
+                            </span>
 
-                    </mat-card-content>
+                        </mat-card-content>
 
-                    <!-- Working Project Description and technologies -->
-                    <mat-card-footer>
+                        <!-- Working Project Description and technologies -->
+                        <mat-card-footer>
 
-                        <span class="project-footer">
+                            <span class="project-footer">
 
-                            <img *ngFor="let technology of workingProject.technologies" src="{{technology.img}}" class="technology-icon">
+                                <img *ngFor="let technology of workingProject.technologies" src="{{technology.img}}" class="technology-icon">
 
-                        </span>
-                        <a href="{{workingProject.links[0].url}}"><img src="/img/github.png" class="project-links"></a>
+                            </span>
+                            <a href="{{workingProject.links[0].url}}"><img src="/img/github.png" class="project-links"></a>
 
-                    </mat-card-footer>
-            
-
+                        </mat-card-footer>
+                        
+                     </a>
+                    
                 </mat-card>
             
             </mat-card-content>
