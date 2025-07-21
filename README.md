@@ -9,23 +9,14 @@ A responsive personal portfolio built with **Angular**, showcasing projects, ski
 src/
 
 ├── app/
-
 │ ├── components/
-
 │ │ ├── header/ ← Navigation bar
-
 │ │ ├── projects/ ← Project showcase cards
-
 │ │ ├── skills/ ← Skills section
-
 │ │ ├── contact/ ← Contact form
-
 │ │ ├── footer/ ← Footer component
-
 │ └── app.component.* ← Layout wrapper and routing
-
 ├── assets/ ← Images, fonts, static files
-
 └── styles.css ← Global styling & responsive rules
 
 ---
