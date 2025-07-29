@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SkillsService } from '../../services/skills/skills';
 import { StrongSkills, LearningSkills } from '../../services/skills/skill';
 
@@ -21,10 +21,21 @@ export class Skills {
   strongSkills: StrongSkills[] = [];
   learningSkills: LearningSkills[] = [];
 
-  // As soon as the web starts get the skills
+  @Input()isDarkMode!: boolean;
+
+  // As soon as the web starts get the skills and set the  theme
   ngOnInit() {
     this.strongSkills = this.skillsService.getStrongSkill()
     this.learningSkills = this.skillsService.getLearningSkill();
+    if(this.isDarkMode == true){
+      document.documentElement.classList.add('dark-theme');
+    }else{
+      document.documentElement.classList.remove('dark-theme');
+    }
   }
+
+  
+
+  
 
 }

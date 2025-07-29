@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class App {
   protected title = 'portfolio';
+  isDarkMode = true;
+
+  toggleTheme() {
+    this.isDarkMode = !this.isDarkMode;
+  }
 }

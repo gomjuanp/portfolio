@@ -1,5 +1,18 @@
-*{
+:root {
+    --color: black;
+    --bg-color: rgba(245, 245, 245, 0.233);
+    --primary-color: #0858ec;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme {
+    --color: #E0E0E0 ;
+    --bg-color: #1F1F1F;
+    --primary-color: #0A4D92;
+    --shadow-color: rgba(255, 255, 255, 0.1);
+}
+
+* {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(245, 245, 245, 0.233);
-    /* #0858ec , rgb(232, 244, 255) , rgba(232, 244, 255, 0.808) */
+    background-color: var(--bg-color);
 }

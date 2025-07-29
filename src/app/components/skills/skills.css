@@ -1,6 +1,9 @@
+*{
+    color: var(--color);
+    border-radius: 12px;
+}
 
 .skills-card {
-    background-color: rgb(232, 244, 255);
     padding: 32px 25px;
     border-radius: 12px;
     margin: 0 16px;
@@ -11,22 +14,23 @@
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    background-color: rgb(232, 244, 255);
     margin-top: -10px;
     margin-bottom: 20px;
 }
 
+
 .strong-skills, .learning-skills{
-    background-color:rgba(255, 255, 255, 0.425);
-    border-radius: 12px;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--shadow-color);
 }
 
 .strong-skills > mat-card-header, .learning-skills > mat-card-header{
+    
     font-size: 20px;
     font-weight: bold;
     padding-left: 22px;
     padding-top: 30px;
-    background-color: rgba(255, 255, 255, 0.425);
+
 }
 
 .strong-skills > mat-card-content, .learning-skills > mat-card-content{
@@ -36,8 +40,6 @@
     justify-content: center;
     gap: 20px;
     padding: 16px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.425);
     align-items: center;
     gap: 35px;
     margin-bottom: 10px;
@@ -52,9 +54,7 @@
     min-width: 170px;
     max-width: 170px;
     height: 120px;
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.425);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 4px var(--shadow-color);
     transition: transform 0.2s ease-in-out;
     flex: 1 1 120px;
 }

@@ -1,3 +1,14 @@
+*{
+    color: var(--color);
+    border-radius: 12px;
+}
+
+hr{
+  box-shadow: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
 h2 {
     margin: 0 45px 0 45px;
     font-size: 28px;
@@ -14,7 +25,6 @@ h2 {
 
 .copied-message {
   margin-left: 10px;
-  color: #0858ec;
   font-size: 15px;
   font-weight: bold;
   transition: opacity 0.3s;
@@ -22,13 +32,13 @@ h2 {
 
 a, .email{
     text-decoration: none;
-    font-weight: bold;
-    color: #0858ec;
+    color: var(--primary-color);
     cursor: pointer;
 }
 a:hover, .email:hover {
-    text-decoration: underline solid #0858ec 3px;
     text-decoration-skip-ink: none;
+    text-decoration: underline var(--primary-color) 2px;
+    text-decoration-line: underline;
 }
 
 
