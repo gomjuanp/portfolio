@@ -2,7 +2,7 @@
 <mat-card class="skills-card">
 
     <!-- Skills Section Title -->
-    <mat-card-title>Skills</mat-card-title>
+    <mat-card-title>{{Title()}}</mat-card-title>
 
     <!-- Skills Section Content -->
     <mat-card-content>
@@ -11,7 +11,7 @@
         <mat-card class="strong-skills">
 
             <!-- Strong Skills Header -->
-            <mat-card-header>Strong</mat-card-header>
+            <mat-card-header>{{Strong()}}</mat-card-header>
 
             <!-- Strong Skills Content -->
             <mat-card-content>
@@ -40,7 +40,7 @@
         <mat-card class="learning-skills">
 
             <!-- Learning Skills Header -->
-            <mat-card-header>Learning</mat-card-header>
+            <mat-card-header>{{Learning()}}</mat-card-header>
 
             <!-- Learning Skills Content -->
             <mat-card-content>
@@ -52,6 +52,7 @@
                     <mat-card-content class="{{learningSkill.name}}">
 
                         <img mat-card-image src="{{learningSkill.img}}">
+                        
                         <p>{{learningSkill.name}}</p>
 
                     </mat-card-content>

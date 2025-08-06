@@ -4,19 +4,22 @@
 <!-- Header Toolbar -->
 <mat-toolbar>
     
-    <mat-toolbar-row>
+    <mat-toolbar-row class="toolbar-row">
 
         <div class="toolbar-left">
 
-            <a class="nav-link" href="#skills">Skills</a>
-            <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#contact">Contact Info</a>
+            <a class="nav-link" href="#skills">{{Skills()}}</a>
+            <a class="nav-link" href="#projects">{{Projects()}}</a>
+            <a class="nav-link" href="#contact">{{Contact()}}</a>
 
         </div>
+
         <div class="toolbar-right">
 
-            <img src="/img/theme.png" (click)="toggleTheme()" class="theme-button">
-            
+            <img src="/img/theme.png" (click)="toggleTheme()" title="Theme" class="theme-button">
+            <a href="/en"><img src="/img/canadian.png"  title="English" id="languages" ></a>
+            <a href="/sp"><img src="/img/colombian.png" id="languages" title="Español"></a> 
+
         </div>
 
     </mat-toolbar-row>
@@ -32,15 +35,15 @@
     <!-- Introduction Text -->
     <article >
 
-        <p>Hi!!! I am <strong>Juan Ordonez</strong></p>
-        <p>I am a 20 years old, Colombian Student of Software Development and Network Engineering at <strong><a href="https://www.sheridancollege.ca/">Sheridan College</a></strong>, ON, Canada.</p>
-        <p>Somebody who is always looking to learn new things and improve myself.</p>
+        <p>{{text1()}}<strong>Juan Ordonez</strong></p>
+        <p>{{text2()}}<strong><a href="https://www.sheridancollege.ca/">Sheridan College</a></strong>{{text3()}}</p>
+        <p>{{text4()}}</p>
 
         <!-- PDF link and Woorking status -->
         <div class="buttons-info">
 
-            <button id="resume" (click)="downloadResume()">Resume</button>
-            <a href="#contact"><button id="available">Available to Work</button></a>
+            <button id="resume" (click)="downloadResume()">{{Resume()}}</button>
+            <a href="#contact"><button id="available">{{Available()}}</button></a>
 
         </div>
             

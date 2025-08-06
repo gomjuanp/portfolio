@@ -16,6 +16,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule} from '@angular/material/list';
 
 import { LayoutModule } from '@angular/cdk/layout';
+import {MatSelectModule} from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatToolbarModule,
     MatIconModule,
     MatListModule,
-    LayoutModule
+    LayoutModule,
+    MatSelectModule,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

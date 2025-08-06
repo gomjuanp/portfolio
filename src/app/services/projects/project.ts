@@ -3,7 +3,8 @@ export interface Project {
     type: string;
     name: string;
     img: string;
-    description: string;
+    descriptionEN: string;
+    descriptionSP: string;
     technologies: {
         id: number;
         name: string;
@@ -20,7 +21,8 @@ export class FinishedProjects implements Project {
     type: string;
     name: string;
     img: string;
-    description: string;
+    descriptionEN: string;
+    descriptionSP: string;
     technologies: {
         id: number;
         name: string;
@@ -31,12 +33,13 @@ export class FinishedProjects implements Project {
         url: string;
     }[];
 
-    constructor(id: number, type: string, name: string, img: string, description: string, technologies: { id: number; name: string; img: string; }[], links: { name: string; url: string; }[]) {
+    constructor(id: number, type: string, name: string, img: string, descriptionEN: string, descriptionSP: string, technologies: { id: number; name: string; img: string; }[], links: { name: string; url: string; }[]) {
         this.id = id;
         this.type = type;
         this.name = name;
         this.img = img;
-        this.description = description;
+        this.descriptionEN = descriptionEN;
+        this.descriptionSP = descriptionSP;
         this.technologies = technologies;
         this.links = links;
     }
@@ -47,7 +50,8 @@ export class WorkingProjects implements Project {
     type: string;
     name: string;
     img: string;
-    description: string;
+    descriptionEN: string;
+    descriptionSP: string;
     technologies: {
         id: number;
         name: string;
@@ -58,12 +62,13 @@ export class WorkingProjects implements Project {
         url: string;
     }[];
 
-    constructor(id: number, type: string, name: string, img: string, description: string, technologies: { id: number; name: string; img: string; }[], links: { name: string; url: string; }[]) {
+    constructor(id: number, type: string, name: string, img: string, descriptionEN: string, descriptionSP: string, technologies: { id: number; name: string; img: string; }[], links: { name: string; url: string; }[]) {
         this.id = id;
         this.type = type;
         this.name = name;
         this.img = img;
-        this.description = description;
+        this.descriptionEN = descriptionEN;
+        this.descriptionSP = descriptionSP;
         this.technologies = technologies;
         this.links = links;
     }

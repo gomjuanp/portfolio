@@ -5,7 +5,8 @@
             "type": "Web App",
             "name":"ToDo App",
             "img":"/img/toDoApp.png",
-            "description":"This is a school project that allows users to add tasks with a name, start date, deadline, and description, view all tasks, and delete them. This is the app's first release and covers basic task management features.",
+            "descriptionEN":"This is a school project that allows users to add tasks with a name, start date, deadline, and description, view all tasks, and delete them. This is the app's first release and covers basic task management features.",
+            "descriptionSP":"Este es un proyecto escolar que permite a los usuarios añadir, ver, y eliminar tareas con nombre, fecha de inicio, fecha límite y descripción. Esta es la primera versión de la app y cubre la gestión básica de tareas.",
             "technologies":[
                 {
                     "id":1,
@@ -39,6 +40,71 @@
                     "url": "https://to-do-app-ruby-delta-52.vercel.app/"
                 }
             ]
+        },
+        {   
+            "id":2,
+            "type": "WPF App",
+            "name":"WPF Database",
+            "img":"/img/wpfDatabase.png",
+            "descriptionEN":"This is the solution of my final term of my C# class, a WPF desktop application, showcasing my skills with WPF and SQL logic. It manages customer order CRUD operations using the Northwind database.",
+            "descriptionSP":"Solución final de mi clase de C#, una aplicación de escritorio WP. Muestra mis habilidades con WPF y lógica SQL. Gestiona las operaciones CRUD del cliente utilizando la base de datos Northwind.",
+            "technologies":[
+                {
+                    "id":1,
+                    "name":"C#",
+                    "img": "/img/c_sharp.png"
+                },
+                {
+                    "id":2,
+                    "name":"MySQL",
+                    "img": "/img/MySQL.png"
+                }
+            ],
+            "links": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/gomjuanp/wpfAndDatabaseFinalTerm"
+                },
+                {
+                    "name": "Live Demo",
+                    "url": "https://github.com/gomjuanp/wpfAndDatabaseFinalTerm"
+                }
+            ]
+        },
+        {   
+            "id":3,
+            "type": "Ionic Web",
+            "name":"Ionic Web App",
+            "img":"/img/ionicWebApp.png",
+            "descriptionEN":"Full-stack FAQ application, built with Ionic for the frontend, Node.js with Express.js for the backend, and MongoDB. The frontend uses a sidemenu. Backend server handles CRUD operations using Mongoose.",
+            "descriptionSP":"Aplicación FAQ full-stack, construida con Ionic para el frontend, Node.js con Express.js para el backend y MongoDB. El frontend utiliza un sidemenu. El servidor maneja operaciones CRUD usando Mongoose.",
+            "technologies":[
+                {
+                    "id":1,
+                    "name":"C#",
+                    "img": "/img/ionic.png"
+                },
+                {
+                    "id":2,
+                    "name":"MongoDB",
+                    "img": "/img/mongodb.png"
+                },
+                {
+                    "id":3,
+                    "name":"JavaScript",
+                    "img": "/img/js.png"
+                }
+            ],
+            "links": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/gomjuanp/ionicMongoNodeExpressFinalProject"
+                },
+                {
+                    "name": "Live Demo",
+                    "url": "https://github.com/gomjuanp/ionicMongoNodeExpressFinalProject"
+                }
+            ]
         }
         
     ],
@@ -48,7 +114,8 @@
             "type": "DeskTop App",
             "name":"WireShark With AI",
             "img":"/img/networkTraficAI.png",
-            "description":"A network traffic project that captures the traffic using Wireshark and applies AI to detect potential attacks. It is still in development as I learn how to collect all the possibles real-world scenarios to train the model.",
+            "descriptionEN":"Network traffic project that captures the traffic using Wireshark and applies AI to detect potential attacks. It is still in development as I learn how to collect all the possibles real-world scenarios to train the model.",
+            "descriptionSP":"Proyecto de tráfico de red que captura datos con Wireshark y usa IA para detectar ataques. Sigue en desarrollo para recopilar escenarios del mundo real con los que entrenar el modelo.",
             "technologies":[
             {
                 "id":1,
@@ -64,6 +131,61 @@
                 {
                     "name": "Live Demo",
                     "url": "https://github.com/gomjuanp/networkTrafficAI"
+                }
+            ]
+        },
+        {
+            "id":2,
+            "type": "Video Game",
+            "name":"MindScape",
+            "img":"/img/mindscape.png",
+            "descriptionEN":"Multiplayer therapeutic video game with a console controller for older adults with early dementia or MCI. It enhances cognition, motivation, and social connection, aiming to become a standardized hospital therapy.",
+            "descriptionSP":"Videojuego terapéutico multijugador con mando para adultos mayores con demencia temprana o MCI. Mejora la cognición, la motivación y la conexión social, buscando ser una terapia hospitalaria estandarizada.",
+            "technologies":[
+            {
+                "id":1,
+                "name":"GameMaker",
+                "img": "/img/gamemaker.png"
+            }
+            ],
+            "links": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/gomjuanp/Mindscape"
+                },
+                {
+                    "name": "Live Demo",
+                    "url": "https://github.com/gomjuanp/Mindscape"
+                }
+            ]
+        },
+        {
+            "id":3,
+            "type": "Web App",
+            "name":"PromoU",
+            "img":"/img/promoU.png",
+            "descriptionEN":"PromoU connects small businesses & startups with micro-influencers for affordable product promotion. It's a web app where employers post ad offers & influencers apply, fostering direct communication.",
+            "descriptionSP":"PromoU conecta pequeñas empresas y startups con micro-influencers para promoción de productos. Es una app web donde empleadores publican ofertas e influencers aplican, fomentando comunicación directa.",
+            "technologies":[
+            {
+                "id":1,
+                "name":"HTML",
+                "img": "/img/html.png"
+            },
+            {
+                "id":2,
+                "name":"CSS",
+                "img": "/img/css.png"
+            }
+            ],
+            "links": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/gomjuanp/promoU"
+                },
+                {
+                    "name": "Live Demo",
+                    "url": "https://github.com/gomjuanp/promoU"
                 }
             ]
         }

@@ -68,6 +68,7 @@ mat-card{
 .sheridan-banner{
     width: 270px;
     height: auto;
+    
 }
 
 @media screen and (max-width: 768px) {

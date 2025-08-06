@@ -1,6 +1,6 @@
 <hr>
 <!-- Contact Information Title -->
-<h2>Contact</h2>
+<h2>{{Contact()}}</h2>
 
 <!-- Contact Information Content -->
 <section class="information">
@@ -19,13 +19,13 @@
             
             <span *ngIf="copied" class="copied-message">
 
-                Copied!
+                Copy!
 
             </span>
 
         </p>
         <p>Mississauga, Ontario, Canada</p>
-        <a href="#header">Back to the Top</a>
+        <a href="#header">{{text1()}}</a>
 
     </div>
 
@@ -57,7 +57,7 @@
     <!-- Courses Information -->
     <div class="courses">
 
-        <p>More info about my Sheridan courses. </p>
+        <p>{{text2()}} <br> {{text3()}}</p>
         <a href="https://www.sheridancollege.ca/programs/computer-systems-technology-software-development-and-network-engineering#tab=courses">
             <mat-card class="sheridan-banner">
 

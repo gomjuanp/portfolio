@@ -1,6 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit, computed, inject } from '@angular/core';
 import { SkillsService } from '../../services/skills/skills';
 import { StrongSkills, LearningSkills } from '../../services/skills/skill';
+import { languages } from '../../assets/data/textContent.json';
+import { Language } from '../../language';
 
 @Component({
   selector: 'app-skills',
@@ -8,34 +10,42 @@ import { StrongSkills, LearningSkills } from '../../services/skills/skill';
   templateUrl: './skills.html',
   styleUrl: './skills.css'
 })
-export class Skills {
 
-  // Constructor to import the SkillServe to use the Getters and Setters
+export class Skills implements OnInit {
+
   constructor(public skillsService: SkillsService) { }
 
-  // Creating the Skill objects without initializing them
+  // Storing all type of skills
   StrongSkills!: StrongSkills;
   LearningSkills!: LearningSkills;
-
-  // Creating the list for the Skill types
   strongSkills: StrongSkills[] = [];
   learningSkills: LearningSkills[] = [];
 
+  // Getting the input from the app about the theme mode
   @Input()isDarkMode!: boolean;
 
-  // As soon as the web starts get the skills and set the  theme
+  // Get the default language from the app
+  private languageService = inject(Language);
+
+  // Define the content of each field
+  protected Title = computed(() => this.textContent().title);
+  protected Strong = computed(() => this.textContent().strong);
+  protected Learning = computed(() => this.textContent().learning);
+
+  // On Init to retrive the skills in its respective array list
   ngOnInit() {
     this.strongSkills = this.skillsService.getStrongSkill()
     this.learningSkills = this.skillsService.getLearningSkill();
-    if(this.isDarkMode == true){
-      document.documentElement.classList.add('dark-theme');
-    }else{
-      document.documentElement.classList.remove('dark-theme');
-    }
   }
 
-  
+  // Use computed signals to derive the text content based on the current language.
+  // The template will automatically update when the language changes.
+  private textContent = computed(() => {
+    const lang = this.languageService.currentLanguage();
+    return lang === 'sp' ? languages.spanish.skills : languages.english.skills;
+    
+  });
 
-  
+
 
 }

@@ -1,11 +1,12 @@
 *{
     color: var(--color);
-    border-radius: 12px;
 }
 
 .projects-section{
     padding: 32px 25px;
     margin: 0 16px;
+    border-radius: 12px;
+
 }
 
 .projects-section > mat-card-title{
@@ -14,11 +15,15 @@
     text-align: center;
     margin-top: -10px;
     margin-bottom: 20px;
+    border-radius: 12px;
+
 }
 
 .finished-projects, .working-projects{
     border: 3px solid var(--primary-color);
     box-shadow: 0 0 10px var(--shadow-color);
+    border-radius: 12px;
+
 }
 
 .finished-projects > mat-card-header, .working-projects > mat-card-header{
@@ -26,6 +31,8 @@
     font-weight: bold;
     padding-left: 22px;
     padding-top: 30px;
+    border-radius: 12px;
+
 }
 
 .finished-projects > mat-card-content, .working-projects > mat-card-content{
@@ -38,6 +45,8 @@
     align-items: center;
     gap: 35px;
     margin-bottom: 10px;
+    border-radius: 12px;
+
 }
 
 .project-card{
@@ -52,11 +61,19 @@
     box-shadow: 0 1px 4px var(--shadow-color);
     transition: transform 0.2s ease-in-out;
     flex: 1 1 120px;
+    border-radius: 12px;
+
+}
+
+.project-card > mat-card-content{
+    cursor: pointer;
 }
 
 img[mat-card-img]{
     width: 100%;
     height: auto;
+    border-radius: 12px;
+
 }
 
 .project-name{
@@ -105,6 +122,10 @@ img[mat-card-img]{
 }
 
 @media screen and (max-width: 768px) {
+
+    .projects-section{
+        margin-top:-10px;
+    }
 
     .project-card {
             min-width: 100%;

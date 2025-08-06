@@ -77,13 +77,19 @@
         },
         {
             "id": 7,
-            "name": "C#/WPF",
+            "name": "C#",
             "img": "/img/c_sharp.png"
         },
         {
             "id": 8,
             "name": "Ionic",
             "img": "/img/ionic.png"
+        }
+        ,
+        {
+            "id": 8,
+            "name": "GameMaker",
+            "img": "/img/gamemaker.png"
         }
 
     ]

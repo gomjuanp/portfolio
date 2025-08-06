@@ -1,0 +1,73 @@
+{
+    "languages": {
+        "english": {
+            "header": {
+                "title": "Juan Pablo Ordonez Gomez",
+                "toolbar": {
+                    "skills": "Skills",
+                    "projects": "Projects",
+                    "contact": "Contact Info"
+                },
+                "article": {
+                    "text1": "Hi!!! I am ",
+                    "text2": "I am a 20 years old, Colombian Student of Software Development and Network Engineering at ",
+                    "text3": ", ON, Canada.",
+                    "text4": "Somebody who is always looking to learn new things and improve myself.",
+                    "resume": "Resume",
+                    "available": "Available to Work"
+                }
+            },
+            "skills": {
+                "title": "Skills",
+                "strong": "Strong",
+                "learning": "Learning"
+            },
+            "projects": {
+                "title": "Projects",
+                "finished": "Finished",
+                "working": "Working On"
+            },
+            "contact": {
+                "title": "Contact Info",
+                "text1": "Back to the top",
+                "text2": "More info about my Sheridan courses",
+                "text3": "Click the Sherdian banner."
+
+            }
+        },
+        "spanish": {
+            "header": {
+                "title": "Juan Pablo Ordonez Gomez",
+                "toolbar": {
+                    "skills": "Habilidades",
+                    "projects": "Proyectos",
+                    "contact": "Contacto"
+                },
+                "article": {
+                    "text1": "Hola!!! Soy ",
+                    "text2": "Soy un estudiante colombiano de 20 años de Desarrollo de Software e Ingeniería de Redes en ",
+                "text3": ", ON, Canadá.",
+                "text4": "Alguien que siempre está buscando aprender cosas nuevas y mejorarse a si mismo.",
+                "resume": "Currículum",
+                "available": "Disponible para trabajo"
+            }
+        },
+        "skills": {
+            "title": "Habilidades",
+            "strong": "Fuertes",
+            "learning": "Aprendiendo"
+        },
+        "projects": {
+            "title": "Proyectos",
+            "finished": "Terminados",
+            "working": "Trabajando"
+        },
+        "contact": {
+            "title": "Información de contacto",
+            "text1": "Volver arriba",
+            "text2": "Más información sobre mis cursos: ",
+            "text3": "Haz clic en el banner de Sheridan."
+            }
+        }
+    }
+}

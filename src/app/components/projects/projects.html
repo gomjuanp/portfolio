@@ -2,7 +2,7 @@
 <mat-card class="projects-section">
 
     <!-- Projects Section Title -->
-    <mat-card-title>Projects</mat-card-title>
+    <mat-card-title>{{Title()}}</mat-card-title>
 
     <!-- Projects Section Content -->
     <mat-card-content class="general-content">
@@ -11,7 +11,7 @@
         <mat-card class="finished-projects">
 
             <!-- Finished Projects Header -->
-            <mat-card-header>Finished Projects</mat-card-header>
+            <mat-card-header>{{Finished()}}</mat-card-header>
 
             <!-- Finished Projects Content -->
             <mat-card-content>
@@ -24,9 +24,15 @@
                             
                             <img mat-card-img src="{{finishedProject.img}}" class="project-image">
                             <p class="project-name">{{finishedProject.name}}</p>
+                            <!-- Changing the description based on the Title language -->
                             <span *ngIf="isSmallScreen == false">
 
-                                <p class="project-description">{{finishedProject.description}}</p>
+                                <span *ngIf="Title() == 'Proyectos'">
+                                    <p class="project-description">{{finishedProject.descriptionSP}}</p>
+                                </span>
+                                <span *ngIf="Title() == 'Projects'">
+                                    <p class="project-description">{{finishedProject.descriptionEN}}</p>
+                                </span>
 
                             </span>
 
@@ -55,7 +61,7 @@
         <mat-card class="working-projects">
 
             <!-- Working Projects Header -->
-            <mat-card-header>Working Projects</mat-card-header>
+            <mat-card-header>{{Working()}}</mat-card-header>
 
             <!-- Working Projects Content -->
             <mat-card-content>
@@ -67,9 +73,15 @@
 
                             <img mat-card-img src="{{workingProject.img}}" class="project-image">
                             <p class="project-name">{{workingProject.name}}</p>
+                            <!-- Changing the description based on the Title language -->
                             <span *ngIf="isSmallScreen == false">
 
-                                    <p class="project-description">{{workingProject.description}}</p>
+                                <span *ngIf="Title() == 'Proyectos'">
+                                    <p class="project-description">{{workingProject.descriptionSP}}</p>
+                                </span>
+                                <span *ngIf="Title() == 'Projects'">
+                                    <p class="project-description">{{workingProject.descriptionEN}}</p>
+                                </span>
 
                             </span>
 
